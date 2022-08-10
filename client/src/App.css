@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.button-container {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.button-container svg {
+  width: 50px;
+  height: 50px;
+  border: 2px solid gray;
+  border-radius: 50px;
+  padding: 10px;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+.button-container svg:hover {
+  color: #fff;
+  background: black;
+  transform: scale(1.1);
+}
+
+.result-container li {
+  display: flex;
+  list-style: none;
+}
+.result-container span {
+  padding: 0 20px 0 0;
+  width: 150px;
+}
+.result-container h3 {
+  padding-bottom: 10px;
+}
+.run-area {
+  background-color: rgb(110, 185, 110);
+  margin-bottom: 5px;
+  width: 75%;
+  height: 75px;
+  border: 2px solid black;
+}
+
+.horse {
+  width: 111px;
+  height: 70px;
+  background: url('https://i.imgur.com/kUVGLVk.png');
+  position: absolute;
+  z-index: 2;
+  animation: horse 1s steps(6) infinite;
+}
+
+@keyframes horse {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.finish-area {
+  background-size: 400%;
+  height: 78px;
+  width: 100px;
+  background-image: url(https://t4.ftcdn.net/jpg/03/70/53/91/360_F_370539127_zcUHQTNUaGbyEMeaexk5UiuPT0NLgjeW.jpg);
+}
